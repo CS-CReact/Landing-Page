@@ -48,16 +48,16 @@ export default function Layout({ children, home }) {
               <Link href="/">
                 <Image
                   priority
-                  src="/images/profile.jpg"
+                  src="/images/c-react2.png"
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={50}
+                  width={50}
                   alt=""
                 />
               </Link>
               <h2 className={utilStyles.headingLg}>
                 <Link href="/" className={utilStyles.colorInherit}>
-                  {name}
+                  {/* {name} */}
                 </Link>
               </h2>
             </>

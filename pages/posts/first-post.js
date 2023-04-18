@@ -9,12 +9,18 @@ export default function FirstPost() {
   return (
     <Layout>
       <Head>
-        <title>First Post</title>
+        <title>Contact</title>
       </Head>
-      <h1>First Post</h1>
-      <h2>
+      <h1>CONTACT</h1>
+      <br />
+      <input
+        type="text"
+        placeholder="Your Name"
+        className="input input-bordered w-full max-w-xs"
+      />
+      {/* <h2>
         <Link href="/">Back to home</Link>
-      </h2>
+      </h2> */}
     </Layout>
   );
 }

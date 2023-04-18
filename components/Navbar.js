@@ -1,17 +1,17 @@
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 px-20 py-3 pt-10">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">Home</a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <a>Demo</a>
           </li>
           <li tabIndex={0}>
             <a>
-              Parent
+              Features
               <svg
                 className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export default function Navbar() {
             </ul>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>Team</a>
           </li>
         </ul>
       </div>

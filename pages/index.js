@@ -3,6 +3,9 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
+import Contact from "./contact";
+import NpmCodeblock from "../components/NpmCodeblock.js";
+import DevTools from "../components/DevTools.js";
 
 export default function Home() {
   return (
@@ -15,14 +18,24 @@ export default function Home() {
 
         <main>
           <h1 className={styles.title}>
-            Visualize fiber scheduling patterns of your React components{" "}
+            Custom renderer & visualizer for modern React
           </h1>
+          <h2 className={styles.h2}>
+            C-React is an open-source tool that marks and visualizes concurrent
+            rendering patterns on web pages, differentiates between server-side
+            rendered and client-side rendered components, and displays
+            performance metrics.
+          </h2>
 
           <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
+            <div className={styles.card}>
               <h3>Getting Started &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
+              <NpmCodeblock />
+              {/* <a className={styles.link} href="https://nextjs.org/docs">
+                <p style={{ marginTop: "3rem" }}>Install Chrome Dev Tool</p>
+              </a> */}
+              <DevTools />
+            </div>
 
             <a href="https://nextjs.org/learn" className={styles.card}>
               <h3>Features &rarr;</h3>
@@ -48,23 +61,14 @@ export default function Home() {
             </a>
           </div>
           <br />
-          <p className={styles.description}>
+          {/* <p className={styles.description}>
             Questions? Comments? Contact us{" "}
-            <Link Visit href="/posts/first-post">
+            <Link Visit href="/contact">
               here!
-            </Link>
-          </p>
+            </Link> */}
+
+          <Contact />
         </main>
-        <footer>
-          {/* <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-          </a> */}
-        </footer>
       </div>
     </Layout>
   );

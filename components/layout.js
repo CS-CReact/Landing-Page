@@ -70,7 +70,7 @@ export default function Layout({ children, home }) {
           </div>
         )}
       </div>
-      <Footer />
+      <Footer className={styles.footer} />
     </>
   );
 }

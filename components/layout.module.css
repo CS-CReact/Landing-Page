@@ -1,7 +1,9 @@
+/* this is for pages with different routes, we probably won't use this */
 .container {
     max-width: 50rem;
     padding: 0 1rem;
     margin: 3rem auto 6rem;
+    min-height: 71vh;
 }
 
 .header {

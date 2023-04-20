@@ -1,4 +1,4 @@
-import styles from "../styles/layout.module.css";
+import styles from '../styles/layout.module.css';
 
 export default function DevTools() {
   return (
@@ -7,7 +7,7 @@ export default function DevTools() {
         className={styles.link}
         href="https://www.npmjs.com/package/creact-visualizer"
       >
-        <p style={{ marginTop: "3rem" }} c>
+        <p style={{ marginTop: '3rem' }} c>
           Install C-React DevTool from the Chrome Web Store
         </p>
       </a>

@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import styles from "../styles/layout.module.css";
+import { useState } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import styles from '../styles/layout.module.css';
 
 export default function NpmCodeblock() {
   const code = `import React from 'react';
@@ -33,13 +33,13 @@ export default function NpmCodeblock() {
       Import cRender into your root file
       <br />
       Render your root component using the cRender
-      <div style={{ marginTop: "3rem" }} className="mockup-code">
+      <div style={{ marginTop: '3rem' }} className="mockup-code">
         <pre>
           <code>{code}</code>
         </pre>
         <CopyToClipboard text={code} onCopy={handleCopy}>
           <button className="btn btn-active btn-ghost absolute top-0 right-0">
-            {copied ? "Copied!" : "Copy"}
+            {copied ? 'Copied!' : 'Copy'}
           </button>
         </CopyToClipboard>
       </div>

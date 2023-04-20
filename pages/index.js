@@ -60,6 +60,7 @@ export default function Home() {
         <div id="contactsection">
           <Contact />
         </div>
+        
     </>
   );
 }

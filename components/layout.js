@@ -1,14 +1,14 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "./layout.module.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from './layout.module.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
+import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
 
-const name = "C-React";
-export const siteTitle = "C-React";
+const name = 'C-React';
+export const siteTitle = 'C-React';
 
 export default function Layout({ children, home }) {
   return (

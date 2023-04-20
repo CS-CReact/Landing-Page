@@ -1,9 +1,9 @@
-import "tailwindcss/tailwind.css";
-import "daisyui";
+import 'tailwindcss/tailwind.css';
+import 'daisyui';
 
-import Link from "next/link";
-import Head from "next/head";
-import Layout from "../../components/layout";
+import Link from 'next/link';
+import Head from 'next/head';
+import Layout from '../../components/layout';
 
 export default function FirstPost() {
   return (

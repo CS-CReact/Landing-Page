@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write ."
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -19,6 +21,7 @@
     "@types/react": "^18.0.35",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.22",
+    "prettier": "^2.8.7",
     "tailwindcss": "^3.3.1",
     "typescript": "^5.0.4"
   }

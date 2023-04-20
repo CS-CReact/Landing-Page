@@ -6,6 +6,7 @@ import utilStyles from "../styles/utils.module.css";
 import Contact from "./contact";
 import NpmCodeblock from "../components/NpmCodeblock.js";
 import DevTools from "../components/DevTools.js";
+import Features from "../components/Features.js";
 
 export default function Home() {
   return (
@@ -31,34 +32,24 @@ export default function Home() {
             <div className={styles.card}>
               <h3>Getting Started &rarr;</h3>
               <NpmCodeblock />
-              {/* <a className={styles.link} href="https://nextjs.org/docs">
-                <p style={{ marginTop: "3rem" }}>Install Chrome Dev Tool</p>
-              </a> */}
               <DevTools />
             </div>
-
-            <a href="https://nextjs.org/learn" className={styles.card}>
+            <div className={styles.card}>
               <h3>Features &rarr;</h3>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
+              <Features />
+            </div>
 
-            <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
-              className={styles.card}
-            >
+            <div className={styles.card}>
               <h3>Demo &rarr;</h3>
               <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
+            </div>
 
-            <a
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-            >
+            <div className={styles.card}>
               <h3>Meet the Team &rarr;</h3>
               <p>
                 Instantly deploy your Next.js site to a public URL with Vercel.
               </p>
-            </a>
+            </div>
           </div>
           <br />
           {/* <p className={styles.description}>

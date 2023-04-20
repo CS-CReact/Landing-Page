@@ -15,7 +15,7 @@ export default function DevTools() {
       <br />
       Open Chrome Developer Tools and click on the C-React panel
       <br />
-      Watch the tree update dynamically as you navigate through your open page
+      Watch the tree update dynamically as you navigate through your web page
     </>
   );
 }

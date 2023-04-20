@@ -1,9 +1,7 @@
 import "tailwindcss/tailwind.css";
 import "daisyui";
 import { useState } from "react";
-import Head from "next/head";
-import Layout from "../components/layout";
-import styles from "../styles/Home.module.css";
+
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -37,14 +35,10 @@ export default function Contact() {
   };
   return (
     <>
-      {/* <Layout> */}
-      <Head>
-        <title>Contact</title>
-      </Head>
-      <h1 style={{ marginTop: "5rem" }} className={styles.title}>
+      <h1 style={{ marginTop: "5rem" }} >
         CONTACT
       </h1>
-      <p className={styles.description}>
+      <p>
         Questions? Comments? Contact us below!
       </p>
       <br />
@@ -87,10 +81,6 @@ export default function Contact() {
           </button>
         </div>
       </form>
-      {/* <h2>
-        <Link href="/">Back to home</Link>
-      </h2> */}
-      {/* //</Layout> */}
     </>
   );
 }

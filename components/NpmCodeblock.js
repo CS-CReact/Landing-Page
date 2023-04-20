@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/layout.module.css";
 
 export default function NpmCodeblock() {
   const code = `import React from 'react';

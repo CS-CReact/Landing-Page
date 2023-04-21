@@ -24,7 +24,7 @@ module.exports = {
         white:'#FFFFFF'
       },
       fontFamily: {
-        sans: ['Graphik', 'sans-serif'],
+        sans: ['var(--font-mulish)', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
       },
     },

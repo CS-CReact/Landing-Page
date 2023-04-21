@@ -3,10 +3,10 @@ import styles from '../styles/layout.module.css';
 import 'tailwindcss/tailwind.css';
 import Link from 'next/link';
 import Contact from '../components/contact.js';
-import NpmCodeblock from '../components/NpmCodeblock.js';
-import DevTools from '../components/devtool.js';
+import Demos from '../components/demos.js'
 import Team from '../components/team.js';
 import Features from '../components/features.js';
+import Intros from '../components/intros.js'
 
 const name = 'C-React';
 const siteTitle = 'C-React';
@@ -16,12 +16,11 @@ export default function Home() {
     <>
       <Head>
         <title>C-React Home Page</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logo2.png" />
         <meta
           name="description"
           content="Landing page for C-React App that helps developers to visualize React"
         />
-        <meta property="og:image" content="..public/images/c-react.jpg" />
         <meta name="og:title" content={siteTitle} />
       </Head>
       <div id="homesection" className='m-20 p-20 text-center'>
@@ -40,22 +39,10 @@ export default function Home() {
 
       <div id="featuressection">
         <Features />
+        <Intros />
       </div>
-      <div className={styles.card}>
-        <h3>Getting Started &rarr;</h3>
-        <NpmCodeblock />
-        <DevTools />
-      </div>
-      
-
       <div id="demosection">
-        <a
-          href="https://github.com/vercel/next.js/tree/master/examples"
-          className={styles.card}
-        >
-          <h3>Demo &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
+        <Demos />
       </div>
       <div id="teamsection">
         <Team />

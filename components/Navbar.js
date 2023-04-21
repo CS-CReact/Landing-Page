@@ -4,19 +4,12 @@ import 'tailwindcss/tailwind.css';
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100 px-20 py-3 pt-10">
+    <div className="navbar px-20 py-3 pt-10">
       <div className="flex-1">
-        <Image
-          priority
-          src="/images/c-react.jpg"
-          height={14}
-          width={14}
-          alt="logo"
-        />
         <Link href="#homesection">C-React</Link>
       </div>
       <div className="flex-none">
-        <ul className="flex space-x-8">
+        <ul className="flex space-x-6">
           <li>
             <Link href="#homesection">Home</Link>
           </li>
@@ -34,7 +27,7 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
-      <button className="rounded-full bg-dark">Dark Mode</button>
+      <button className="rounded-full bg-dark text-white dark:bg-white text-sm dark:text-dark px-5 mx-5">Dark Mode</button>
     </div>
   );
 }

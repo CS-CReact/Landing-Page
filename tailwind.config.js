@@ -5,19 +5,8 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-
+  darkMode: 'class',
   theme: {
-    colors: {
-      dark: '#0C2730',
-      grey: '#708182',
-      light: '#CEE0E0',
-      green: '#E3F1EC',
-      lightgreen: '#FAFEFD',
-    },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
     extend: {
       spacing: {
         128: '32rem',
@@ -26,6 +15,18 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
       },
+      colors: {
+        dark: '#28444B',
+        grey: '#708182',
+        light: '#CEE0E0',
+        green: '#E3F1EC',
+        lightgreen: '#FAFEFD',
+        white:'#FFFFFF'
+      },
+      fontFamily: {
+        sans: ['Graphik', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+      },
     },
   },
   variants: {
@@ -33,6 +34,7 @@ module.exports = {
     extend: {
       borderColor: ['focus-visible'],
       opacity: ['disabled'],
+      textColor: ['dark'],
     },
   },
   plugins: [

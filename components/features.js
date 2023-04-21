@@ -1,8 +1,16 @@
+import Image from 'next/image';
+import 'tailwindcss/tailwind.css';
+
 export default function features() {
   return (
-    <a href="https://nextjs.org/learn">
-      <h3>Features &rarr;</h3>
-      <p>Learn about Next.js in an interactive course with quizzes!</p>
-    </a>
+    <>
+      <div className='text-center p-10 m-10'>
+        <h3 className='text-2xl p-10 m-10'>Features</h3>
+        <div className='flex flex-col text-center'>
+            <Image src='/images/feature1.png' width='40' height='40'></Image>
+            <p>Dynamic Rendering</p>
+        </div>
+      </div>
+    </>
   );
 }

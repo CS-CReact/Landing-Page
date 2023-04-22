@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         <Link href="#homesection">C-React</Link>
         <div className="text-center">
-          <ul className="flex space-x-10 text-sm">
+          <ul className="flex sm:gap-1 md:gap-4 lg:gap-10 text-sm">
             <li>
               <Link href="#homesection">Home</Link>
             </li>

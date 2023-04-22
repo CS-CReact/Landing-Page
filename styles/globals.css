@@ -30,17 +30,9 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: #dfffe0;
   color: inherit;
   text-decoration: underline;
-}
-
-
-h1,
-h2,
-p,
-ul {
-  margin: 0;
 }
 
 ul {
@@ -48,7 +40,7 @@ ul {
   list-style: none;
 }
 li{
-  padding: 0px 15px;
+  padding: 0px 2%;
   border-radius: 20px;
 }
 li:hover{

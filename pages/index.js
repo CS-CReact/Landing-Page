@@ -44,8 +44,15 @@ export default function Home() {
       <div id="demosection">
         <Demos />
       </div>
-      <div id="teamsection">
-        <Team />
+      <div id="teamsection" className='text-center p-20'>
+        <h3>Meet the Team</h3>
+        <div className='flex flex-wrap justify-center p-10 m-10 gap-24'>
+          <Team />
+          <Team />
+          <Team />
+          <Team />
+          <Team />
+        </div>
       </div>
       <div id="contactsection">
         <Contact />

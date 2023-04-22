@@ -1,6 +1,5 @@
 import Navbar from './navbar';
 import Footer from './footer';
-import styles from '../styles/layout.module.css';
 import 'tailwindcss/tailwind.css';
 
 export default function Layout({ children }) {

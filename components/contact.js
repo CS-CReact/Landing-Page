@@ -1,6 +1,5 @@
-import 'tailwindcss/tailwind.css';
-import 'daisyui';
 import { useState } from 'react';
+import 'tailwindcss/tailwind.css';
 
 export default function Contact() {
   const [name, setName] = useState('');
@@ -34,48 +33,48 @@ export default function Contact() {
   };
   return (
     <>
-      <h1 style={{ marginTop: '5rem' }}>CONTACT</h1>
-      <p>Questions? Comments? Contact us below!</p>
-      <br />
-      <form onSubmit={handleSubmit}>
-        <input
-          style={{ marginTop: '1rem' }}
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          className="input input-bordered w-full"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <br />
-        <br />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          className="input input-bordered w-full"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <br />
-        <br />
-        <textarea
-          className="textarea textarea-bordered w-full"
-          placeholder="Message"
-          name="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        ></textarea>
-        <div className="text-center">
-          <button
-            type="submit"
-            className="btn btn-primary"
-            style={{ marginTop: '1rem' }}
-          >
-            Submit
-          </button>
+      <div className='m-10 mb-20'>
+        <div className='text-center m-5'>
+          <p className='text-xl p-5'>CONTACT</p>
+          <p className='text-sm'>Questions? Comments? Contact us below!</p>
         </div>
-      </form>
+        <div className='text-center flex flex-col flex-wrap'>
+          <form onSubmit={handleSubmit}>
+            <div className='w-full'>
+              <input 
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                className="input input-bordered w-2/5 text-sm m-2"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
+            <div className='w-full'>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                className="input input-bordered w-2/5 text-sm m-2"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className='w-full'>
+              <textarea
+                className="textarea textarea-bordered w-2/5 text-sm m-2 h-24"
+                placeholder="Message"
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              ></textarea>
+            </div>
+            <div className='m-5'>
+              <button type="submit" className="rounded-full bg-dark text-white dark:bg-white text-xs dark:text-dark px-5 py-0.5 mx-5">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </>
   );
 }

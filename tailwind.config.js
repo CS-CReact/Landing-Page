@@ -19,13 +19,25 @@ module.exports = {
         dark: '#28444B',
         grey: '#708182',
         light: '#CEE0E0',
-        green: '#E3F1EC',
+        darkgreen:'#6F9A97',
+        green: '#E7FFF7',
+        palegreen:'#EDFFF9',
         lightgreen: '#FAFEFD',
         white:'#FFFFFF'
       },
       fontFamily: {
-        sans: ['var(--font-mulish)', 'sans-serif'],
+        sans: [ 'var(--font-mulish)'],
         serif: ['Merriweather', 'serif'],
+      },
+      screens: {
+        'phone':'360px',
+        // => @media (min-width: 375px) { ... }
+
+        'tablet': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'desktop': '1024px',
+        // => @media (min-width: 1280px) { ... }
       },
     },
   },

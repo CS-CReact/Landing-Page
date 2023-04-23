@@ -11,6 +11,11 @@ body {
               radial-gradient(ellipse at 2% 98%, #EEFBF7, transparent);
 }
 
+body :dark{
+  background-color: black;
+  color:#EEFBF7;
+}
+
 .background-animate {
   background-size: 400%;
 
@@ -46,4 +51,7 @@ li{
 li:hover{
   box-shadow: inset 100px 0 0 0 #708182 ;
   color:white;
+}
+input, textarea {
+  --tw-ring-shadow: 0 0 #000 !important;
 }

@@ -4,8 +4,8 @@ export default function intros(){
     return(
         <>
           <div className='flex flex-col gap-20 text-center  pt-20'>
-            <div className='text-start mt-2'>
-                <div className='flex justify-center gap-5'>
+            <div className='desktop:text-start mt-2'>
+                <div className='desktop:flex justify-center gap-5'>
                     <Image
                         src='/images/placeholder.gif'
                         alt='function intro of custom renderer'

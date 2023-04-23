@@ -23,8 +23,8 @@ export default function NpmCodeblock() {
   };
   return (
     <>
-      <div className='flex justify-center gap-5'>
-        <div className='text-end pt-10'>
+      <div className='min-[800px]:flex desktop:flex desktop:justify-center desktop:gap-5'>
+        <div className='desktop:text-end pt-10 desktop:pr-20 pb-10'>
           <p>Npm install instructions</p>
           <a href="https://www.npmjs.com/package/creact-visualizer">
             Download NPM Package
@@ -34,15 +34,17 @@ export default function NpmCodeblock() {
           
           <p>Render your root component using the cRender</p>
         </div>
-        <div className="mockup-code text-start w-fit height-96" width={400} height={500}>
-          <pre>
-            <code className='text-xs'>{code}</code>
-          </pre>
-          <CopyToClipboard text={code} onCopy={handleCopy}>
-            <button className="btn btn-active btn-ghost absolute text-xs top-0 right-0">
-              {copied ? 'Copied!' : 'Copy'}
-            </button>
-          </CopyToClipboard>
+        <div className='content-center'>
+          <div className="mockup-code bg-dark height-3/5" >
+            <pre className="text-start">
+              <code className='text-xs'>{code}</code>
+            </pre>
+            <CopyToClipboard text={code} onCopy={handleCopy}>
+              <button className="btn btn-active btn-ghost absolute text-xs top-0 right-0">
+                {copied ? 'Copied!' : 'Copy'}
+              </button>
+            </CopyToClipboard>
+          </div>
         </div>
       </div>
     </>

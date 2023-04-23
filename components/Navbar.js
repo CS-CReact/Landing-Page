@@ -4,11 +4,11 @@ import 'tailwindcss/tailwind.css';
 
 export default function Navbar() {
   return (
-    <div className="px-10 py-3 pt-5 mx-20">
+    <div className="sm:mx-5 md:mx-10 px-10 pt-5 lg:mx-20">
       <div className="flex justify-between items-center">
         <Link href="#homesection">C-React</Link>
         <div className="text-center">
-          <ul className="flex sm:gap-1 md:gap-4 lg:gap-10 text-sm">
+          <ul className="flex invisible sm:visible sm:gap-1 md:gap-4 lg:gap-10 text-sm">
             <li>
               <Link href="#homesection">Home</Link>
             </li>

@@ -23,8 +23,9 @@ export default function Home() {
         />
         <meta name="og:title" content={siteTitle} />
       </Head>
-      <div id="homesection" className='m-20 p-20 text-center'>
-        <h1 className='text-5xl'>
+      
+      <div id="homesection" className='desktop:m-20 desktop:p-20 text-center'>
+        <h1 className='desktop:text-5xl'>
           Custom renderer & visualizer for modern React
         </h1>
         <h2 className='text-1xl p-10 mb-10'>
@@ -35,10 +36,19 @@ export default function Home() {
         </h2>
         <button className="rounded-full bg-dark text-white dark:bg-white dark:text-dark px-5 mx-5">Npm Install</button>
         <button className="rounded-full text-dark dark:bg-dark dark:text-white px-5 mx-5">Google Dev Tool</button>
-      </div>
+        <div id="animations" className='w-full h-1 text-end'>
+          <span class="absolute invisible md:visible right-1 top-46 inline-flex rounded-full h-96 w-96 bg-gradient-to-tl from-green animate-pulse"></span>
+        </div>
 
-      <div id="featuressection">
+      </div>
+      <div id="animations" className='w-full h-5'>
+        <span class="relative invisible md:visible inline-flex rounded-full h-96 w-96 bg-gradient-to-tr from-green animate-pulse"></span>
+      </div>
+      <div id="featuresection">
         <Features />
+        <div id="animations" className='w-full h-1 text-end'>
+          <span class="relative invisible md:visible inline-flex right-10 rounded-full h-96 w-96 bg-gradient-to-bl from-palegreen from-10% to-transparent animate-pulse"></span>
+        </div>
         <Intros />
       </div>
       <div id="demosection">

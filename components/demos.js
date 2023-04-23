@@ -6,7 +6,7 @@ export default function demos(){
       <div>
         <div className='text-center mt-20 p-10'>
             <h2>Getting Started</h2>
-            <div className="p-10 m-10" >
+            <div className="desktop:p-10 desktop:m-10" >
                 <NpmCodeblock />
             </div>
             <div className='mb-5'>

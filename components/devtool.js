@@ -14,7 +14,7 @@ export default function DevTools() {
           />
 
         </div>
-        <div className='text-start pt-10'>
+        <div className='text-start pt-10 pl-20 w-2/6'>
           <p>Chrome Devtool instructions</p>
           <a href="https://www.npmjs.com/package/creact-visualizer">
             Install C-React DevTool from the Chrome Web Store

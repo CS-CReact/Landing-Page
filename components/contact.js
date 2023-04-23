@@ -33,8 +33,8 @@ export default function Contact() {
   };
   return (
     <>
-      <div className='m-10 mb-20'>
-        <div className='text-center m-5'>
+      <div className='sm:m-2 md:5 lg:m-10 mb-20 z-10'>
+        <div className='text-center lg:m-5'>
           <p className='text-xl p-5'>CONTACT</p>
           <p className='text-sm'>Questions? Comments? Contact us below!</p>
         </div>
@@ -45,7 +45,7 @@ export default function Contact() {
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="input input-bordered w-2/5 text-sm m-2"
+                className="input input-bordered rounded-md focus:outline-none  focus-visible:border-darkgreen z-10 w-2/5 text-sm m-2"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -55,14 +55,14 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                className="input input-bordered w-2/5 text-sm m-2"
+                className="input input-bordered focus:outline-none focus-visible:border-darkgreen rounded-md w-2/5 text-sm m-2"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className='w-full'>
               <textarea
-                className="textarea textarea-bordered w-2/5 text-sm m-2 h-24"
+                className="textarea textarea-bordered focus:outline-none focus-visible:border-darkgreen rounded-md w-2/5 text-sm m-2 h-24"
                 placeholder="Message"
                 name="message"
                 value={message}

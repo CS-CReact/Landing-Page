@@ -5,7 +5,7 @@ import 'tailwindcss/tailwind.css';
 
 export default function Navbar() {
   return (
-    <div className="sm:mx-5 phone:px-5  md:mx-8 md:px-5 px-10 pt-5 lg:mx-20">
+    <div className="sm:mx-5 phone:px-5 md:mx-8 md:px-5 px-10 pt-5 lg:mx-20">
       <div className="flex justify-between items-center">
         <button className="rounded-full text-dark dark:bg-dark text-sm dark:text-white px-5 lg:mx-5">C-React</button>
         <div className="text-center pr-10">

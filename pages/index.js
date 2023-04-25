@@ -24,18 +24,18 @@ export default function Home() {
         <meta name="og:title" content={siteTitle} />
       </Head>
       
-      <div id="homesection" className='desktop:m-20 desktop:p-20 text-center'>
-        <h1 className='desktop:text-5xl'>
+      <div id="homesection" className='mt-20 phone:mt-20 phone:pt-5 phone:mx-5 tablet:m-20 tablet:pt-20 desktop:m-20 desktop:p-20 text-center'>
+        <h1 className='text-2xl phone:text-3xl tablet:text-4xl desktop:text-5xl mx-2'>
           Custom renderer & visualizer for modern React
         </h1>
-        <h2 className='text-1xl p-10 mb-10'>
+        <h2 className='text-sm phone:text-base tablet:text-lg desktop:text-1xl py-10 px-5 tablet:px-10 mb-10 text-grey'>
           C-React is an open-source tool that marks and visualizes concurrent
           rendering patterns on web pages, differentiates between server-side
           rendered and client-side rendered components, and displays performance
           metrics.
         </h2>
-        <button className="rounded-full bg-dark text-white dark:bg-white dark:text-dark px-5 mx-5">Npm Install</button>
-        <button className="rounded-full text-dark dark:bg-dark dark:text-white px-5 mx-5">Google Dev Tool</button>
+        <button className="rounded-full bg-dark text-white dark:bg-white dark:text-dark px-5 mx-5 text-sm tablet:text-base">Npm Install</button>
+        <button className="rounded-full text-dark dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base">Google Dev Tool</button>
         <div id="animations" className='w-full h-1 text-end'>
           <span class="absolute invisible md:visible right-1 top-46 inline-flex rounded-full h-96 w-96 bg-gradient-to-tl from-green animate-pulse"></span>
         </div>

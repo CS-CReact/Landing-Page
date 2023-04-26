@@ -23,7 +23,7 @@ export default function NpmCodeblock() {
   };
   return (
     <>
-      <div className='min-[800px]:flex desktop:flex desktop:justify-center desktop:gap-5'>
+      <div className='min-[800px]:flex desktop:justify-center gap-5'>
         <div className='desktop:text-end pt-10 desktop:pr-20 pb-10'>
           <p>Npm install instructions</p>
           <a href="https://www.npmjs.com/package/creact-visualizer">

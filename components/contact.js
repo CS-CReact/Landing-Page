@@ -35,7 +35,7 @@ export default function Contact() {
     <>
       <div className='sm:m-2 md:5 mb-20 z-10'>
         <div className='text-center m-5'>
-          <p className='text-xl p-5'>CONTACT</p>
+          <p className='text-2xl desktop:p-10 desktop:m-10 mb-10'>CONTACT</p>
           <p className='text-sm'>Questions? Comments? Contact us below!</p>
         </div>
         <div className='text-center flex flex-col flex-wrap'>

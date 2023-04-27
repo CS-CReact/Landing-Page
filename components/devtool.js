@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function DevTools() {
   return (
     <>
-      <div className='min-[800px]:flex justify-center gap-5 mt-10 pt-10'>
+      <div className='desktop:flex justify-center gap-5 mt-10 pt-10'>
         <div className='desktop:text-start py-10 desktop:pl-20 desktop:w-2/6 desktop:hidden'>
           <p>Chrome Devtool instructions</p>
           <a href="https://www.npmjs.com/package/creact-visualizer">
@@ -24,7 +24,7 @@ export default function DevTools() {
           />
 
         </div>
-        <div className='text-start pt-10 pl-20 desktop:w-2/6 hidden desktop:block'>
+        <div className='text-start pl-20 desktop:w-2/6 hidden desktop:block'>
           <p>Chrome Devtool instructions</p>
           <a href="https://www.npmjs.com/package/creact-visualizer">
             Install C-React DevTool from the Chrome Web Store

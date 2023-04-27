@@ -23,7 +23,7 @@ export default function NpmCodeblock() {
   };
   return (
     <>
-      <div className='min-[800px]:flex desktop:justify-center gap-5'>
+      <div className='desktop:flex desktop:justify-center gap-5'>
         <div className='desktop:text-end pt-10 desktop:pr-20 pb-10'>
           <p>Npm install instructions</p>
           <a href="https://www.npmjs.com/package/creact-visualizer">
@@ -35,7 +35,7 @@ export default function NpmCodeblock() {
           <p>Render your root component using the cRender</p>
         </div>
         <div className='content-center'>
-          <div className="mockup-code bg-dark height-3/5" >
+          <div className="mockup-code phone:w-80 tablet:w-96 mx-auto w-76 block bg-dark height-3/5" >
             <pre className="text-start">
               <code className='text-xs'>{code}</code>
             </pre>

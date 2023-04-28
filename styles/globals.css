@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 html,
 body {
   padding: 0;
@@ -11,10 +13,14 @@ body {
               radial-gradient(ellipse at 2% 98%, #EEFBF7, transparent);
 }
 
-body :dark{
-  background-color: black;
-  color:#EEFBF7;
+@layer base {
+  body {
+    @apply  bg-gradient-to-br from-emerald-50 via-white to-emerald-50 via-white to-emerald-50 to-transparent dark:bg-dark dark:text-gray-100;
+    @apply min-h-screen;
+  }
 }
+
+
 
 .background-animate {
   background-size: 400%;

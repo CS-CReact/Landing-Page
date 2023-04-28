@@ -1,17 +1,19 @@
 import Head from 'next/head';
-import styles from '../styles/layout.module.css';
 import 'tailwindcss/tailwind.css';
 import Link from 'next/link';
 import Contact from '../components/contact.js';
-import Demos from '../components/demos.js'
+import Demos from '../components/demos.js';
 import Team from '../components/team.js';
 import Features from '../components/features.js';
-import Intros from '../components/intros.js'
+import Intros from '../components/intros.js';
 
-const name = 'C-React';
+
+
+
 const siteTitle = 'C-React';
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -28,7 +30,7 @@ export default function Home() {
         <h1 className='text-2xl phone:text-3xl tablet:text-4xl desktop:text-5xl mx-2'>
           Custom renderer & visualizer for modern React
         </h1>
-        <h2 className='text-sm phone:text-base tablet:text-lg desktop:text-1xl py-10 px-5 tablet:px-10 mb-10 text-grey'>
+        <h2 className='text-sm phone:text-base tablet:text-lg desktop:text-1xl py-10 px-5 tablet:px-10 mb-10 text-grey dark:text-light'>
           C-React is an open-source tool that marks and visualizes concurrent
           rendering patterns on web pages, differentiates between server-side
           rendered and client-side rendered components, and displays performance

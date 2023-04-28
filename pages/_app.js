@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import Layout from '../components/layout';
 import {Mulish} from '@next/font/google';
+import { ThemeProvider } from 'next-themes'
 
 const mulish = Mulish({
   subsets:['latin'],
@@ -10,8 +11,11 @@ const mulish = Mulish({
 
 export default function App({ Component, pageProps }) {
   return (
-    <Layout className={`${mulish.variable} font-sans`}>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider attribute="class" > 
+      <Layout className={`${mulish.variable} font-sans`}>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
+
   );
 }

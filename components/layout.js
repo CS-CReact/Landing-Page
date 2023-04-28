@@ -13,7 +13,7 @@ export default function Layout({ children }) {
   return (
     <>
       <div className={mulish.className}>
-        <div className='background-animate bg-gradient-to-br from-emerald-50 via-white to-emerald-50 via-white to-emerald-50 sto-transparent overflow-hidden '>
+        <div className='background-animate overflow-hidden'>
           <Navbar />
           <main >{children}</main>
           <Footer />

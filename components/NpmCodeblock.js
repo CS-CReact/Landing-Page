@@ -34,8 +34,8 @@ export default function NpmCodeblock() {
           
           <p>Render your root component using the cRender</p>
         </div>
-        <div className='content-center'>
-          <div className="mockup-code phone:w-80 tablet:w-96 mx-auto w-76 block bg-dark height-3/5" >
+        <div className='content-center '>
+          <div className="mockup-code phone:w-80 tablet:w-96 mx-auto w-76 block bg-dark height-3/5 dark:border-2 dark:border-light-grey " >
             <pre className="text-start">
               <code className='text-xs'>{code}</code>
             </pre>

@@ -13,6 +13,7 @@ export default function Footer() {
             alt='chen'
             width={14}
             height={14}
+            className='dark:invert'
           />
         </a>
       </div>

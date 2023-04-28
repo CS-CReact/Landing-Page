@@ -26,7 +26,7 @@ export default function team() {
                 alt='chen'
                 width={14}
                 height={14}
-                className='shadow-md rounded-sm'
+                className='shadow-md rounded-sm dark:invert'
             />
         </div>
         </div>

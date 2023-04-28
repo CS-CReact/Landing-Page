@@ -9,13 +9,14 @@ body {
   padding: 0;
   margin: 0;
   font-size: 18px;
-  background: radial-gradient(ellipse at 98% 2%, #EEFBF7, transparent 40%),            
-              radial-gradient(ellipse at 2% 98%, #EEFBF7, transparent);
+  background: radial-gradient(ellipse at 98% 2%, #effdf8, transparent 35%), 
+              radial-gradient(ellipse at 5% 35%, #eaf9f4, transparent 50%),             
+              radial-gradient(ellipse at 98% 90%, #f0fffb, transparent 50%);
 }
 
 @layer base {
   body {
-    @apply  bg-gradient-to-br from-emerald-50 via-white to-emerald-50 via-white to-emerald-50 to-transparent dark:bg-dark dark:text-gray-100;
+    @apply dark:bg-dark dark:bg-gradient-to-br dark:text-gray-100;
     @apply min-h-screen;
   }
 }

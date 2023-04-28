@@ -30,7 +30,7 @@ export default function Home() {
         <h1 className='text-2xl phone:text-3xl tablet:text-4xl desktop:text-5xl mx-2'>
           Custom renderer & visualizer for modern React
         </h1>
-        <h2 className='text-sm phone:text-base tablet:text-lg desktop:text-1xl py-10 px-5 tablet:px-10 mb-10 text-grey dark:text-light'>
+        <h2 className='text-sm phone:text-base tablet:text-lg desktop:text-1xl py-10 px-5 tablet:px-10 mb-10 text-grey dark:text-lightgreen'>
           C-React is an open-source tool that marks and visualizes concurrent
           rendering patterns on web pages, differentiates between server-side
           rendered and client-side rendered components, and displays performance
@@ -38,19 +38,9 @@ export default function Home() {
         </h2>
         <button className="rounded-full bg-dark text-white dark:bg-white dark:text-dark px-5 mx-5 text-sm tablet:text-base">Npm Install</button>
         <button className="rounded-full text-dark dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base">Google Dev Tool</button>
-        <div id="animations" className='w-full h-1 text-end'>
-          <span class="absolute invisible md:visible right-1 top-46 inline-flex rounded-full h-96 w-96 bg-gradient-to-tl from-green animate-pulse"></span>
-        </div>
-
-      </div>
-      <div id="animations" className='w-full h-5'>
-        <span class="relative invisible md:visible inline-flex rounded-full h-96 w-96 bg-gradient-to-tr from-green animate-pulse"></span>
       </div>
       <div id="featuresection">
         <Features />
-        <div id="animations" className='w-full h-1 text-end'>
-          <span class="relative invisible md:visible inline-flex right-10 rounded-full h-96 w-96 bg-gradient-to-bl from-palegreen from-10% to-transparent animate-pulse"></span>
-        </div>
         <Intros />
       </div>
       <div id="demosection">

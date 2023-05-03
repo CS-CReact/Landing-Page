@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 html,
 body {
   padding: 0;
   margin: 0;
   font-size: 18px;
-  background: radial-gradient(ellipse at 98% 2%, #effdf8, transparent 35%), 
-              radial-gradient(ellipse at 5% 35%, #eaf9f4, transparent 50%),             
-              radial-gradient(ellipse at 98% 90%, #f0fffb, transparent 50%);
+  background: radial-gradient(ellipse at 98% 2%, #effdf8, transparent 35%),
+    radial-gradient(ellipse at 5% 35%, #eaf9f4, transparent 50%),
+    radial-gradient(ellipse at 98% 90%, #f0fffb, transparent 50%);
 }
 
 @layer base {
@@ -20,8 +18,6 @@ body {
     @apply min-h-screen;
   }
 }
-
-
 
 .background-animate {
   background-size: 400%;
@@ -51,14 +47,15 @@ ul {
   padding: 0;
   list-style: none;
 }
-li{
+li {
   padding: 0px 2%;
   border-radius: 20px;
 }
-li:hover{
-  box-shadow: inset 100px 0 0 0 #708182 ;
-  color:white;
+li:hover {
+  box-shadow: inset 100px 0 0 0 #708182;
+  color: white;
 }
-input, textarea {
+input,
+textarea {
   --tw-ring-shadow: 0 0 #000 !important;
 }

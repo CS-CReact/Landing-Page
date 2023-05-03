@@ -62,14 +62,14 @@
 .link:hover,
 .link:focus,
 .link:active {
-  color: #4b8d6ef9;;
+  color: #4b8d6ef9;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
   /* color: #0070f3; */
-  border-color: #4b8d6ef9;;
+  border-color: #4b8d6ef9;
 }
 
 .h2 {

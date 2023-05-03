@@ -9,11 +9,11 @@ export default function Footer() {
         <a href="https://github.com/oslabs-beta/react-visualizer">
           {/*github icon */}
           <Image
-            src='/images/github-black.png'
-            alt='chen'
+            src="/images/github-black.png"
+            alt="chen"
             width={14}
             height={14}
-            className='dark:invert'
+            className="dark:invert"
           />
         </a>
       </div>

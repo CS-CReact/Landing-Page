@@ -19,24 +19,24 @@ module.exports = {
         dark: '#28444B',
         grey: '#708182',
         light: '#CEE0E0',
-        darkgreen:'#6F9A97',
+        darkgreen: '#6F9A97',
         green: '#E7FFF7',
-        palegreen:'#EDFFF9',
+        palegreen: '#EDFFF9',
         lightgreen: '#FAFEFD',
-        white:'#FFFFFF'
+        white: '#FFFFFF',
       },
       fontFamily: {
-        sans: [ 'var(--font-mulish)'],
+        sans: ['var(--font-mulish)'],
         serif: ['Merriweather', 'serif'],
       },
       screens: {
-        'phone':'360px',
+        phone: '360px',
         // => @media (min-width: 375px) { ... }
 
-        'tablet': '640px',
+        tablet: '640px',
         // => @media (min-width: 640px) { ... }
-  
-        'desktop': '1024px',
+
+        desktop: '1024px',
         // => @media (min-width: 1280px) { ... }
       },
     },

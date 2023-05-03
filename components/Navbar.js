@@ -1,40 +1,42 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import 'tailwindcss/tailwind.css';
+import { useTheme } from 'next-themes';
+
 export default function Navbar() {
+  //for dark mode
+  const { theme, setTheme } = useTheme();
   return (
-    <div className="navbar bg-base-100">
-      <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
-      </div>
-      <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li tabIndex={0}>
-            <a>
-              Parent
-              <svg
-                className="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-              </svg>
-            </a>
-            <ul className="p-2 bg-base-100">
-              <li>
-                <a>Submenu 1</a>
-              </li>
-              <li>
-                <a>Submenu 2</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+    <div className="px-1 mx-2 phone:px-5 md:mx-8 md:px-5 sm:px-7 pt-5 lg:mx-20">
+      <div className="flex justify-between items-center">
+        <button className="rounded-full text-dark dark:bg-dark text-sm dark:text-white phone:px-5 px-3 lg:mx-5">
+          C-React
+        </button>
+        <div className="text-center pr-10">
+          <ul className="sm:flex hidden sm:gap-1 md:gap-3 lg:gap-6 text-sm">
+            <li>
+              <Link href="#homesection">Home</Link>
+            </li>
+            <li>
+              <Link href="#featuresection">Features</Link>
+            </li>
+            <li>
+              <Link href="#demosection">Demo</Link>
+            </li>
+            <li>
+              <Link href="#teamsection">Team</Link>
+            </li>
+            <li>
+              <Link href="#contactsection">Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <button
+          className="rounded-full bg-dark text-white dark:bg-white text-xs dark:text-dark phone:px-5 px-3 py-0.5 lg:mx-5"
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        >
+          {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+        </button>
       </div>
     </div>
   );

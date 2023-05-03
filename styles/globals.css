@@ -6,40 +6,56 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 18px;
+  background: radial-gradient(ellipse at 98% 2%, #effdf8, transparent 35%),
+    radial-gradient(ellipse at 5% 35%, #eaf9f4, transparent 50%),
+    radial-gradient(ellipse at 98% 90%, #f0fffb, transparent 50%);
+}
+
+@layer base {
+  body {
+    @apply dark:bg-dark dark:bg-gradient-to-br dark:text-gray-100;
+    @apply min-h-screen;
+  }
+}
+
+.background-animate {
+  background-size: 400%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 a {
-  color: #0070f3;
+  color: #dfffe0;
   color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-h1,
-h2,
-p,
-ul {
-  margin: 0;
+  text-decoration: underline;
 }
 
 ul {
   padding: 0;
   list-style: none;
 }
-
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+li {
+  padding: 0px 2%;
+  border-radius: 20px;
+}
+li:hover {
+  box-shadow: inset 100px 0 0 0 #708182;
+  color: white;
+}
+input,
+textarea {
+  --tw-ring-shadow: 0 0 #000 !important;
 }

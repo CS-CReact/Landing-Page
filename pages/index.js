@@ -1,69 +1,69 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import 'tailwindcss/tailwind.css';
 import Link from 'next/link';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
+import Contact from '../components/contact.js';
+import Demos from '../components/demos.js';
+import Team from '../components/team.js';
+import Features from '../components/features.js';
+import Intros from '../components/intros.js';
+
+const siteTitle = 'C-React';
 
 export default function Home() {
   return (
-    <Layout home>
-      <div className={styles.container}>
-        <Head>
-          <title>{siteTitle}</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+    <>
+      <Head>
+        <title>C-React Home Page</title>
+        <link rel="icon" href="/images/logo2.png" />
+        <meta
+          name="description"
+          content="Landing page for C-React App that helps developers to visualize React"
+        />
+        <meta name="og:title" content={siteTitle} />
+      </Head>
 
-        <main>
-          <h1 className={styles.title}>
-            Read <Link href="/posts/first-post">this page!</Link>
-          </h1>
-
-          <p className={styles.description}>
-            Get started by editing <code>pages/index.js</code>
-          </p>
-
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h3>Learn &rarr;</h3>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-
-            <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
-              className={styles.card}
-            >
-              <h3>Examples &rarr;</h3>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-            >
-              <h3>Deploy &rarr;</h3>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
-          </div>
-        </main>
-
-        <footer>
-          {/* <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-          </a> */}
-        </footer>
+      <div
+        id="homesection"
+        className="mt-20 phone:mt-20 phone:pt-5 phone:mx-5 tablet:m-20 tablet:pt-20 desktop:m-20 desktop:p-20 text-center"
+      >
+        <h1 className="text-2xl phone:text-3xl tablet:text-4xl desktop:text-5xl mx-2">
+          Custom renderer & visualizer for modern React
+        </h1>
+        <h2 className="text-sm phone:text-base tablet:text-lg desktop:text-1xl py-10 px-5 tablet:px-10 mb-10 text-grey dark:text-lightgreen">
+          C-React is an open-source tool that marks and visualizes concurrent
+          rendering patterns on web pages, differentiates between server-side
+          rendered and client-side rendered components, and displays performance
+          metrics.
+        </h2>
+        <button className="rounded-full bg-dark text-white dark:bg-white dark:text-dark px-5 mx-5 text-sm tablet:text-base">
+          Npm Install
+        </button>
+        <button className="rounded-full text-dark dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base">
+          Google Dev Tool
+        </button>
       </div>
-    </Layout>
+      <div id="featuresection">
+        <Features />
+        <Intros />
+      </div>
+      <div id="demosection">
+        <Demos />
+      </div>
+      <div id="teamsection" className="text-center p-20">
+        <h3 className="text-2xl desktop:p-10 desktop:m-10 mb-10">
+          Meet the Team
+        </h3>
+        <div className="flex flex-wrap justify-center p-10 m-10 gap-24">
+          <Team />
+          <Team />
+          <Team />
+          <Team />
+          <Team />
+        </div>
+      </div>
+      <div id="contactsection">
+        <Contact />
+      </div>
+    </>
   );
 }

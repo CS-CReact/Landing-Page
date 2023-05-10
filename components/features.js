@@ -12,7 +12,7 @@ export default function features() {
               src="/images/lanes.png"
               width="40"
               height="40"
-              className="mb-5"
+              className="mb-5 dark:invert"
             ></Image>
             <p className="w-40 text-sm align-middle">Lane Updates</p>
           </div>
@@ -21,7 +21,7 @@ export default function features() {
               src="/images/comp.png"
               width="40"
               height="40"
-              className="mb-5"
+              className="mb-5 dark:invert"
             ></Image>
             <p className="w-40 text-sm">Component Updates</p>
           </div>
@@ -30,7 +30,7 @@ export default function features() {
               src="/images/chrome1.png"
               width="40"
               height="40"
-              className="mb-5"
+              className="mb-5 dark:invert"
             ></Image>
             <p className="w-40 text-sm align-middle">Chrome Dev Tool</p>
           </div>
@@ -39,7 +39,7 @@ export default function features() {
               src="/images/renderer.png"
               width="40"
               height="40"
-              className="mb-5"
+              className="mb-5 dark:invert"
             ></Image>
             <p className="w-40 text-sm">Custom Renderer</p>
           </div>
@@ -48,7 +48,7 @@ export default function features() {
               src="/images/metrics.png"
               width="40"
               height="40"
-              className="mb-5"
+              className="mb-5 dark:invert"
             ></Image>
             <p className="w-40 text-sm">Performance Metrics</p>
           </div>
@@ -57,7 +57,7 @@ export default function features() {
               src="/images/water.png"
               width="40"
               height="40"
-              className="mb-5"
+              className="mb-5 dark:invert"
             ></Image>
             <p className="w-40 text-sm">Hydration (Coming)</p>
           </div>

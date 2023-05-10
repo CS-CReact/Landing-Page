@@ -24,7 +24,7 @@ export default function team({ TeamInfo }) {
                   alt="martin_linkedin"
                   width={16}
                   height={16}
-                  className="shadow-md rounded-sm"
+                  className="shadow-md rounded-sm dark:invert"
                 />
               </Link>
               <Link href={TeamInfo.github}>

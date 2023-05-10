@@ -20,12 +20,25 @@ export default function Contact() {
     fetch('https://formspree.io/f/xayzanoy', requestOptions)
       .then((response) => response.json())
       .then((data) => {
+        let element = document.getElementById('emailSent');
         console.log(data);
-        alert('Your message has been sent!');
+        element.classList.add('fade-in-out');
+        element.style.visibility = 'visible';
+        setTimeout(function () {
+          element.classList.remove('fade-in-out');
+          element.style.visibility = 'hidden';
+        }, 5000);
       })
       .catch((error) => {
         console.error(error);
-        alert('Something went wrong!');
+        let element = document.getElementById('somethingWrong');
+        console.log(data);
+        element.classList.add('fade-in-out');
+        element.style.display = 'flex';
+        setTimeout(function () {
+          element.classList.remove('fade-in-out');
+          element.style.display = 'none';
+        }, 5000);
       });
     setName('');
     setEmail('');
@@ -78,6 +91,48 @@ export default function Contact() {
               </button>
             </div>
           </form>
+
+          <div
+            id="emailSent"
+            class="bg-palegreen border-t-4 invisible  border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md"
+            role="alert"
+          >
+            <div class="flex">
+              <div class="py-1">
+                <svg
+                  class="fill-current h-5 w-7 text-teal-500 mr-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold mt-1">Your message has been sent!</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="somethingWrong"
+            class="bg-red-100 hidden border-t-4 border-red-500 rounded-b text-teal-900 px-4 py-3 shadow-md"
+            role="alert"
+          >
+            <div class="flex">
+              <div class="py-1">
+                <svg
+                  class="fill-current h-6 w-6 text-red-500 mr-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold mt-1">Something went wrong!</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

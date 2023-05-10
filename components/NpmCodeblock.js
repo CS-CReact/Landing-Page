@@ -27,7 +27,7 @@ export default function NpmCodeblock() {
           <p className="text-2xl pb-10">Npm install instructions</p>
           <a
             href="https://www.npmjs.com/package/creact-visualizer"
-            className="text-grey"
+            className="text-grey dark:text-green"
           >
             Download NPM Package
           </a>

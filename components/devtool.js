@@ -5,7 +5,7 @@ export default function DevTools() {
     <>
       <div className="desktop:flex justify-center gap-5 mt-10 pt-10">
         <div className="desktop:text-end py-10 desktop:pl-20 desktop:w-2/6 desktop:hidden">
-          <p className='text-2xl pb-10'>Chrome Devtool instructions</p>
+          <p className="text-2xl pb-10">Chrome Devtool instructions</p>
           <a href="https://www.npmjs.com/package/creact-visualizer">
             Install C-React DevTool from the Chrome Web Store
           </a>
@@ -26,7 +26,7 @@ export default function DevTools() {
           />
         </div>
         <div className="text-start text-sm pl-20 desktop:w-2/6 hidden desktop:block">
-          <p className='text-2xl pb-10'>Chrome Devtool instructions</p>
+          <p className="text-2xl pb-10">Chrome Devtool instructions</p>
           <a href="https://www.npmjs.com/package/creact-visualizer">
             Install C-React from Chrome Extensions
           </a>

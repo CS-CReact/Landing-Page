@@ -14,9 +14,7 @@ export default function features() {
               height="40"
               className="mb-5"
             ></Image>
-            <p className="w-40 text-sm align-middle">
-              Lane Updates
-            </p>
+            <p className="w-40 text-sm align-middle">Lane Updates</p>
           </div>
           <div className="flex flex-col items-center">
             <Image
@@ -25,9 +23,7 @@ export default function features() {
               height="40"
               className="mb-5"
             ></Image>
-            <p className="w-40 text-sm">
-              Component Updates
-            </p>
+            <p className="w-40 text-sm">Component Updates</p>
           </div>
           <div className="flex flex-col items-center">
             <Image
@@ -45,10 +41,7 @@ export default function features() {
               height="40"
               className="mb-5"
             ></Image>
-            <p className="w-40 text-sm">
-            Custom Renderer
-
-            </p>
+            <p className="w-40 text-sm">Custom Renderer</p>
           </div>
           <div className="flex flex-col items-center">
             <Image
@@ -57,9 +50,7 @@ export default function features() {
               height="40"
               className="mb-5"
             ></Image>
-            <p className="w-40 text-sm">
-              Performance Metrics
-            </p>
+            <p className="w-40 text-sm">Performance Metrics</p>
           </div>
           <div className="flex flex-col items-center">
             <Image

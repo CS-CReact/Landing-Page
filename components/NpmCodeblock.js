@@ -24,11 +24,14 @@ export default function NpmCodeblock() {
     <>
       <div className="desktop:flex desktop:justify-center gap-5">
         <div className="desktop:text-start pt-10 desktop:pr-20 pb-10">
-          <p className='text-2xl pb-10'>Npm install instructions</p>
-          <a href="https://www.npmjs.com/package/creact-visualizer" className='text-grey'>
+          <p className="text-2xl pb-10">Npm install instructions</p>
+          <a
+            href="https://www.npmjs.com/package/creact-visualizer"
+            className="text-grey"
+          >
             Download NPM Package
           </a>
-          <p className='pt-5'>Install "creact-visualizer" via NPM</p>
+          <p className="pt-5">Install "creact-visualizer" via NPM</p>
           <p>Import cRender into your root file</p>
 
           <p>Render your root component using the cRender</p>

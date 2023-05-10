@@ -14,8 +14,8 @@ export default function intros() {
               className="shadow-md rounded-lg block mx-auto desktop:mx-1"
             />
             <div className="pt-10">
-              <p className="text-2xl text-start pl-10">Custom Renderer</p>
-              <p className="max-w-screen-sm p-10 m-auto text-start">
+              <p className="text-2xl text-start pl-10 font-bold">Custom Renderer</p>
+              <p className="max-w-screen-sm p-10 m-auto text-sm text-start">
                 Custom renderer built utilizing React Reconciler package which
                 developers can install and use within their React applications.
                 Our renderer works in conjunction with our Chrome Dev Tool to
@@ -28,8 +28,8 @@ export default function intros() {
         <div className="mt-2">
           <div className="desktop:flex justify-center gap-5">
             <div className="pt-10 hidden desktop:block">
-              <p className="text-2xl text-end pr-10">Chrome Dev Tool</p>
-              <p className="max-w-screen-sm p-10 m-auto text-end">
+              <p className="text-2xl text-end pr-10 font-bold">Chrome Dev Tool</p>
+              <p className="max-w-screen-sm p-10 m-auto text-sm text-end">
                 React Developer Tool which displays a DOM component tree within
                 Chrome Developer Panel that receives data sent from our custom
                 renderer. Our Developer Tool dynamically updates and

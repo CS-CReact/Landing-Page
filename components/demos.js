@@ -5,7 +5,7 @@ export default function demos() {
   return (
     <div>
       <div className="text-center mt-20 desktop:p-10">
-        <h2 className="text-2xl desktop:p-10 desktop:m-10 mb-10">
+        <h2 className="text-2xl desktop:p-10 desktop:m-10 mb-10 font-bold">
           Getting Started
         </h2>
         <div className="desktop:p-10 desktop:m-10">

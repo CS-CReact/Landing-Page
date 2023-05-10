@@ -25,14 +25,14 @@ export default function Home() {
     {
       name: 'Pengbo Liu',
       imageUrl: '/images/pengbo.png',
-      intro: '',
+      intro: 'Write clean code through understanding; Gain understanding through fighting with messy code.',
       linkedin: 'https://www.linkedin.com/in/pengbo-liu-924986217/',
       github: 'https://github.com/PB-Liu',
     },
     {
       name: 'Matthew MacDonald',
       imageUrl: '/images/matthew1.png',
-      intro: 'Bringing order to chaos with code, one bug at a time',
+      intro: 'Bringing order to chaos with code, one bug at a time.',
       linkedin: 'https://www.linkedin.com/in/matthewmacdonald3/',
       github: 'https://github.com/MattMacDonald93',
     },
@@ -79,12 +79,16 @@ export default function Home() {
           rendered and client-side rendered components, and displays performance
           metrics.
         </h2>
-        <button className="rounded-full bg-dark text-white dark:bg-white dark:text-dark px-5 mx-5 text-sm tablet:text-base">
-          Npm Install
-        </button>
-        <button className="rounded-full text-dark dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base">
-          Google Dev Tool
-        </button>
+        <Link href="https://www.npmjs.com/package/creact-visualizer">
+          <button className="rounded-full bg-dark text-white dark:bg-white dark:text-dark px-5 mx-5 text-sm tablet:text-bas ">
+            Npm Install
+          </button>
+        </Link>
+        <Link href="chrome://extensions/">
+          <button className="rounded-full text-dark dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
+            Google Dev Tool
+          </button>
+        </Link>
       </div>
       <div id="featuresection">
         <Features />
@@ -94,7 +98,7 @@ export default function Home() {
         <Demos />
       </div>
       <div id="teamsection" className="text-center p-20">
-        <h3 className="text-2xl desktop:p-10 desktop:m-10 mb-10">
+        <h3 className="text-2xl desktop:p-10 desktop:m-10 mb-10 font-bold">
           Meet the Team
         </h3>
         <div className="flex flex-wrap justify-center p-10 m-10 gap-24">

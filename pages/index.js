@@ -30,14 +30,14 @@ export default function Home() {
     },
     { 
       name:"Matthew MacDonald",
-      imageUrl:"/images/matthew.png",
+      imageUrl:"/images/matthew1.png",
       intro: "Bringing order to chaos with code, one bug at a time",
       linkedin: "https://www.linkedin.com/in/matthewmacdonald3/",
       github:"https://github.com/MattMacDonald93"
     },
     {
       name:"Michelle Lee",
-      imageUrl:"/images/michelle.jpg",
+      imageUrl:"/images/michelle1.jpg",
       intro: "When I'm not coding, I'm likely indulging in LA's food scene, cheering on the Lakers and Dodgers, exploring new hiking trails, or perfecting my mochi muffin recipe.",
       linkedin: "https://www.linkedin.com/in/michellelee27",
       github:"https://github.com/michellesylee"

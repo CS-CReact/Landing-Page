@@ -31,7 +31,7 @@ export default function features() {
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/images/chrome.png"
+              src="/images/chrome1.png"
               width="40"
               height="40"
               className="mb-5"
@@ -63,7 +63,7 @@ export default function features() {
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/images/hydration.png"
+              src="/images/water.png"
               width="40"
               height="40"
               className="mb-5"

@@ -18,7 +18,7 @@ export default function DevTools() {
         </div>
         <div>
           <Image
-            src="/images/placeholder3.png"
+            src="/images/placeholder.gif"
             alt="function intro of custom renderer"
             width={400}
             height={400}
@@ -28,7 +28,7 @@ export default function DevTools() {
         <div className="text-start text-sm pl-20 desktop:w-2/6 hidden desktop:block">
           <p className='text-2xl pb-10'>Chrome Devtool instructions</p>
           <a href="https://www.npmjs.com/package/creact-visualizer">
-            Install C-React DevTool from the Chrome Web Store
+            Install C-React from Chrome Extensions
           </a>
           <p>Open your React application, or any website</p>
           <p>Open Chrome Developer Tools and click on the C-React panel</p>

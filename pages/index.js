@@ -10,6 +10,47 @@ import Intros from '../components/intros.js';
 const siteTitle = 'C-React';
 
 export default function Home() {
+  //code is not dry for demo period
+  //Features will be stored in an object and pass down later
+
+  const teamInfo = [
+    {
+      name:"Chen Shen",
+      imageUrl:"/images/chen.png",
+      intro: "Proud to call myself as life long learner. When I'm not sleeping, I'm learning.",
+      linkedin: "https://www.linkedin.com/in/chentshen/",
+      github:"https://github.com/ChTiSh",
+    },
+    {
+      name:"Pengbo Liu",
+      imageUrl:"/images/pengbo.png",
+      intro: "",
+      linkedin:"https://www.linkedin.com/in/pengbo-liu-924986217/",
+      github:"https://github.com/PB-Liu"
+    },
+    { 
+      name:"Matthew MacDonald",
+      imageUrl:"/images/matthew.png",
+      intro: "Bringing order to chaos with code, one bug at a time",
+      linkedin: "https://www.linkedin.com/in/matthewmacdonald3/",
+      github:"https://github.com/MattMacDonald93"
+    },
+    {
+      name:"Michelle Lee",
+      imageUrl:"/images/michelle.jpg",
+      intro: "When I'm not coding, I'm likely indulging in LA's food scene, cheering on the Lakers and Dodgers, exploring new hiking trails, or perfecting my mochi muffin recipe.",
+      linkedin: "https://www.linkedin.com/in/michellelee27",
+      github:"https://github.com/michellesylee"
+    },
+    {
+      name:"Martin Carmona",
+      imageUrl:"/images/martin.png",
+      intro: "Development Virtuoso, harmonizing modern web techniques with a passion for collaborative innovation.",
+      linkedin: "https://www.linkedin.com/in/martin-carmona-41bbb586/",
+      github:"https://github.com/martin-carmona"
+    },
+  ] 
+
   return (
     <>
       <Head>
@@ -54,11 +95,9 @@ export default function Home() {
           Meet the Team
         </h3>
         <div className="flex flex-wrap justify-center p-10 m-10 gap-24">
-          <Team />
-          <Team />
-          <Team />
-          <Team />
-          <Team />
+          {teamInfo.map((member,index) => (
+            <Team key={index} TeamInfo={member} />
+          ))}
         </div>
       </div>
       <div id="contactsection">

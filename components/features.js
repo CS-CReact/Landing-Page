@@ -9,65 +9,66 @@ export default function features() {
         <div className="flex flex-wrap gap-10 justify-center">
           <div className="flex flex-col items-center">
             <Image
-              src="/images/feature1.png"
+              src="/images/lanes.png"
               width="40"
               height="40"
               className="mb-5"
             ></Image>
             <p className="w-40 text-sm align-middle">
-              Fiber Tree traversal with lane updates
+              Lane Updates
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/images/feature1.png"
+              src="/images/comp.png"
               width="40"
               height="40"
               className="mb-5"
             ></Image>
             <p className="w-40 text-sm">
-              Visualize client-side React Component updates
+              Component Updates
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/images/feature1.png"
+              src="/images/chrome.png"
               width="40"
               height="40"
               className="mb-5"
             ></Image>
-            <p className="w-40 text-sm align-middle">Hydration/SSR TBD</p>
+            <p className="w-40 text-sm align-middle">Chrome Dev Tool</p>
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/images/feature1.png"
+              src="/images/renderer.png"
               width="40"
               height="40"
               className="mb-5"
             ></Image>
             <p className="w-40 text-sm">
-              Dynamic DOM tree visualizer via Chrome dev tool panel
+            Custom Renderer
+
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/images/feature1.png"
+              src="/images/metrics.png"
               width="40"
               height="40"
               className="mb-5"
             ></Image>
             <p className="w-40 text-sm">
-              React application performance metrics
+              Performance Metrics
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/images/feature1.png"
+              src="/images/hydration.png"
               width="40"
               height="40"
               className="mb-5"
             ></Image>
-            <p className="w-40 text-sm">Dynamic Rendering</p>
+            <p className="w-40 text-sm">Hydration (Coming)</p>
           </div>
         </div>
       </div>

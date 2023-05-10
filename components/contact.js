@@ -33,7 +33,7 @@ export default function Contact() {
   };
   return (
     <>
-      <div className="sm:m-2 md:5 mb-20 z-10">
+      <div className="sm:m-2 md:5 mb-10 z-10">
         <div className="text-center m-5">
           <p className="text-2xl desktop:p-10 desktop:m-10 mb-10">CONTACT</p>
           <p className="text-sm">Questions? Comments? Contact us below!</p>
@@ -69,10 +69,10 @@ export default function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
-            <div className="m-5">
+            <div className="m-5 mb-10">
               <button
                 type="submit"
-                className="rounded-full bg-dark text-white dark:bg-white text-xs dark:text-dark px-5 py-0.5 mx-5"
+                className="rounded-full bg-dark text-white dark:bg-white text-xs dark:text-dark px-5 py-0.5 mx-5 mb-10"
               >
                 Submit
               </button>

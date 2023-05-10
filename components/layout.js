@@ -1,5 +1,5 @@
-import Navbar from './navbar';
-import Footer from './footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 import 'tailwindcss/tailwind.css';
 import { Mulish } from '@next/font/google';
 

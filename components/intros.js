@@ -7,15 +7,15 @@ export default function intros() {
         <div className="mt-2">
           <div className="desktop:flex justify-center gap-5">
             <Image
-              src="/images/placeholder.gif"
+              src="/images/renderer_lowframe.gif"
               alt="function intro of custom renderer"
-              width={300}
+              width={500}
               height={500}
               className="shadow-md rounded-lg block mx-auto desktop:mx-1"
             />
             <div className="pt-10">
-              <p className="text-2xl text-start pl-10 font-bold">Custom Renderer</p>
-              <p className="max-w-screen-sm p-10 m-auto text-sm text-start">
+              <p className="text-2xl desktop:text-start pl-10 font-bold">Custom Renderer</p>
+              <p className="max-w-screen-sm p-10 m-auto text-sm desktop:text-start">
                 Custom renderer built utilizing React Reconciler package which
                 developers can install and use within their React applications.
                 Our renderer works in conjunction with our Chrome Dev Tool to
@@ -39,9 +39,9 @@ export default function intros() {
               </p>
             </div>
             <Image
-              src="/images/placeholder.gif"
+              src="/images/devtool_lowframe.gif"
               alt="function intro of custom renderer"
-              width={300}
+              width={500}
               height={500}
               className="shadow-md rounded-lg block mx-auto desktop:mx-1"
             />

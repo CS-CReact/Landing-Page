@@ -55,7 +55,7 @@ export default function DevTools() {
         <div className="desktop:text-end py-10 desktop:pl-20 desktop:w-2/6 desktop:hidden">
           <p className="text-2xl pb-10">Chrome Devtool instructions</p>
           <div className='text-sm'>
-            <ul className="flex text-center pb-2">
+            <ul className="flex text-center pb-2 px-20">
               <li className="flex-1">
                 <a id="option1Btn"
                   className="relative block bg-white dark:bg-dark p-2 text-sm font-medium"

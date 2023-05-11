@@ -51,10 +51,7 @@ li {
   padding: 0px 2%;
   border-radius: 20px;
 }
-li:hover {
-  box-shadow: inset 100px 0 0 0 #708182;
-  color: white;
-}
+
 input,
 textarea {
   --tw-ring-shadow: 0 0 #000 !important;
@@ -62,7 +59,7 @@ textarea {
 
 .fade-in-out {
   opacity: 0;
-  animation: fade-in 2s ease-in forwards, fade-out 3s 1s ease-out forwards;
+  animation: fade-in 1s forwards, fade-out 2s 1s ease-out forwards;
 }
 
 @keyframes fade-in {

@@ -51,10 +51,7 @@ li {
   padding: 0px 2%;
   border-radius: 20px;
 }
-li:hover {
-  box-shadow: inset 100px 0 0 0 #708182;
-  color: white;
-}
+
 input,
 textarea {
   --tw-ring-shadow: 0 0 #000 !important;

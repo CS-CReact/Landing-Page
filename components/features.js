@@ -5,7 +5,9 @@ export default function features() {
   return (
     <>
       <div className="text-center p-10 m-10">
-        <h3 className="text-2xl desktop:p-10 desktop:m-10 mb-10 font-bold">Features</h3>
+        <h3 className="text-2xl desktop:p-10 desktop:m-10 mb-10 font-bold">
+          Features
+        </h3>
         <div className="flex flex-wrap gap-10 justify-center">
           <div className="flex flex-col items-center">
             <Image

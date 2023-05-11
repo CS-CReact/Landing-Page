@@ -25,7 +25,8 @@ export default function Home() {
     {
       name: 'Pengbo Liu',
       imageUrl: '/images/pengbo.png',
-      intro: 'Write clean code through understanding; Gain understanding through fighting with messy code.',
+      intro:
+        'Write clean code through understanding; Gain understanding through fighting with messy code.',
       linkedin: 'https://www.linkedin.com/in/pengbo-liu-924986217/',
       github: 'https://github.com/PB-Liu',
     },

@@ -48,7 +48,9 @@ export default function Contact() {
     <>
       <div className="sm:m-2 md:5 mb-10 z-10">
         <div className="text-center m-5">
-          <p className="text-2xl desktop:p-10 desktop:m-10 mb-10 font-bold">CONTACT</p>
+          <p className="text-2xl desktop:p-10 desktop:m-10 mb-10 font-bold">
+            CONTACT
+          </p>
           <p className="text-sm">Questions? Comments? Contact us below!</p>
         </div>
         <div className="text-center flex flex-col flex-wrap">
@@ -71,7 +73,7 @@ export default function Contact() {
                 className="input input-bordered focus:outline-none focus-visible:border-darkgreen rounded-md w-60 phone:w-64 tablet:w-80 desktop:w-2/5 text-sm m-2"
                 value={email}
                 required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>

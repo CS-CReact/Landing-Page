@@ -15,7 +15,9 @@ export default function intros() {
               className="shadow-md rounded-lg block mx-auto desktop:mx-1"
             />
             <div className="pt-10 desktop:text-start">
-              <p className="text-2xl desktop:text-start pl-10 font-bold">Custom Renderer</p>
+              <p className="text-2xl desktop:text-start pl-10 font-bold">
+                Custom Renderer
+              </p>
               <p className="max-w-screen-sm p-10 m-auto text-sm desktop:text-start">
                 Custom renderer built utilizing React Reconciler package which
                 developers can install and use within their React applications.
@@ -23,9 +25,9 @@ export default function intros() {
                 provide component updates on webpage to improve rendering
                 strategies.
               </p>
-              <Link href="chrome://extensions/" >
+              <Link href="chrome://extensions/">
                 <button className="rounded-full text-dark dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
-                    Learn More
+                  Learn More
                 </button>
               </Link>
             </div>
@@ -34,7 +36,9 @@ export default function intros() {
         <div className="mt-2">
           <div className="desktop:flex justify-center gap-5">
             <div className="pt-10 hidden desktop:block w-76 text-end">
-              <p className="text-2xl text-end pr-10 font-bold">Chrome Dev Tool</p>
+              <p className="text-2xl text-end pr-10 font-bold">
+                Chrome Dev Tool
+              </p>
               <p className="max-w-screen-sm p-10 m-auto text-sm text-end">
                 React Developer Tool which displays a DOM component tree within
                 Chrome Developer Panel that receives data sent from our custom
@@ -45,7 +49,7 @@ export default function intros() {
               </p>
               <Link href="chrome://extensions/">
                 <button className="rounded-full text-gray dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
-                    Learn More
+                  Learn More
                 </button>
               </Link>
             </div>
@@ -68,7 +72,7 @@ export default function intros() {
               </p>
               <Link href="chrome://extensions/">
                 <button className="rounded-full  text-gray dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
-                    Learn More
+                  Learn More
                 </button>
               </Link>
             </div>

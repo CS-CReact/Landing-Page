@@ -4,7 +4,7 @@ export default function team({ TeamInfo }) {
   return (
     <div>
       <div className="group relative">
-        <p className="absolute text-sm p-5 hidden group-hover:block pt-5">
+        <p className="absolute text-sm p-5 pt-10 hidden group-hover:block">
           {TeamInfo.intro}
         </p>
         <div className="w-48">
@@ -21,7 +21,7 @@ export default function team({ TeamInfo }) {
               <Link href={TeamInfo.linkedin}>
                 <Image
                   src="/images/linkedin.png"
-                  alt="martin_linkedin"
+                  alt="member_linkedin"
                   width={16}
                   height={16}
                   className="shadow-md rounded-sm dark:invert"
@@ -30,7 +30,7 @@ export default function team({ TeamInfo }) {
               <Link href={TeamInfo.github}>
                 <Image
                   src="/images/github-black.png"
-                  alt="martin_github"
+                  alt="member_github"
                   width={16}
                   height={16}
                   className="shadow-md rounded-sm dark:invert"

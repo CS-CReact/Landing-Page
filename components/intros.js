@@ -25,8 +25,8 @@ export default function intros() {
                 provide component updates on webpage to improve rendering
                 strategies.
               </p>
-              <Link href="chrome://extensions/">
-                <button className="rounded-full text-dark dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
+              <Link href="https://github.com/oslabs-beta/react-visualizer#readme">
+                <button className="rounded-full text-darkgreen dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
                   Learn More
                 </button>
               </Link>
@@ -47,8 +47,8 @@ export default function intros() {
                 also provides performance metrics of components to promote
                 efficient load times.
               </p>
-              <Link href="chrome://extensions/">
-                <button className="rounded-full text-gray dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
+              <Link href="https://chrome.google.com/webstore/search/c-react?hl=en">
+                <button className="rounded-full text-darkgreen dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
                   Learn More
                 </button>
               </Link>
@@ -70,8 +70,8 @@ export default function intros() {
                 also provides performance metrics of components to promote
                 efficient load times.
               </p>
-              <Link href="chrome://extensions/">
-                <button className="rounded-full  text-gray dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
+              <Link href="https://chrome.google.com/webstore/search/c-react?hl=en">
+                <button className="rounded-full  text-darkgreen dark:bg-dark dark:text-white px-5 mx-5 text-sm tablet:text-base hover:text-black">
                   Learn More
                 </button>
               </Link>

@@ -61,7 +61,8 @@ export default function features() {
               height="40"
               className="mb-5 dark:invert"
             ></Image>
-            <p className="w-40 text-sm">Hydration (Coming)</p>
+            <p className="w-40 text-sm">Hydration </p>
+            <p className="w-40 text-xs">(Coming Soon)</p>
           </div>
         </div>
       </div>

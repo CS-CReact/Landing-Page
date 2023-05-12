@@ -84,7 +84,7 @@ export default function Contact() {
                 name="message"
                 value={message}
                 required
-                minlength="20"
+                minLength="20"
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>

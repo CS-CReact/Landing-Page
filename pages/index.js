@@ -41,7 +41,7 @@ export default function Home() {
       name: 'Michelle Lee',
       imageUrl: '/images/michelle1.jpg',
       intro:
-        "When I'm not coding, I'm likely indulging in LA's food scene, cheering on the Lakers and Dodgers, exploring new hiking trails, or perfecting my mochi muffin recipe.",
+        'On a mission to craft elegant code and turn caffeine into software magic.',
       linkedin: 'https://www.linkedin.com/in/michellelee27',
       github: 'https://github.com/michellesylee',
     },
